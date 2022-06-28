@@ -6,4 +6,3 @@ WHERE end_date IS NULL
 GROUP BY student 
 HAVING avg (assignment_submissions.duration) < avg (assignments.duration) 
 ORDER BY avg (assignment_submissions.duration);
-
